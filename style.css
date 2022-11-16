@@ -8,15 +8,60 @@ body,
 }
 
 :root {
+    --black: #000;
     --light-blue: #2998ff;
+    --dark-blue: #135cc5;
+    --light-red: #f87171;
+    --dark-red: #dc2626;
+    --gray: #252c30;
+
+/*Intentions */
+--primary: var(--light-blue);
+--secondary: var(--dark-blue);
 
 
     /* Typography */
     --h1: 7.594rem;
     --h2: 5.063rem;
-    --h3
+    --h3: 3.375rem;
+    --h4: 2.25rem;
+    --h5: 1.5rem;
 }
 
-.hero{
-    background-color: var(--light-blue);
+.warm {
+    --primary: var(--light-red);
+    --secondary: var(--dark-red);
+}
+
+.cool {
+    --primary: var(var(--light-blue));
+    --secondary: var(var(--dark-blue));
+}
+.hero {
+    background-color: var(--primary);
+}
+
+.main {
+    background-color: var(--secondary);
+    height: 90vh;
+}
+
+h1 {
+    font-size: var(--h1);
+}
+
+h2 {
+    font-size: var(--h2)
+}
+
+h3 {
+    font-size: var(--h3)
+}
+
+h4 {
+    font-size: var(--h4)
+}
+
+h5 {
+    font-size: var(--h5)
 }
