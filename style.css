@@ -65,3 +65,11 @@ h4 {
 h5 {
     font-size: var(--h5)
 }
+
+h1, 
+h2,
+h3,
+h4,
+h5 {
+    text-align: center;
+}
