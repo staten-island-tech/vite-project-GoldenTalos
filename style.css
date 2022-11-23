@@ -9,10 +9,10 @@ body,
 
 :root {
     --black: #000;
-    --light-blue: #2998ff;
-    --dark-blue: #135cc5;
-    --light-red: #f87171;
-    --dark-red: #dc2626;
+    --light-blue: #B3CEE5;
+    --dark-blue: #62aef1;
+    --rose: #F7CAC9;
+    --dark-rose: #f39c9b;
     --gray: #252c30;
 
 /*Intentions */
@@ -29,8 +29,8 @@ body,
 }
 
 .warm {
-    --primary: var(--light-red);
-    --secondary: var(--dark-red);
+    --primary: var(--rose);
+    --secondary: var(--dark-rose);
 }
 
 .cool {
