@@ -4,12 +4,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vite</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="../styles/style.css" />
 </head>
-<body class="cool">
-    <h1 class="hero">CSS Custom Properties</h1>
-    <div class="main">
-        <button class="btn"> Click Me</button></div>
-    <script src="index.js"></script>
+<body class="light">
+  <div id="header">
+    <h1>Menu</h1>
+    <div class="options">
+        <button class="opt-btn" id="all"> Full Menu</button>
+        <button class="opt-btn" id ="appetizers"> Appetizers </button>
+        <button class="opt-btn" id="drinks"> Drinks </button>
+        <button class="opt-btn" id="beef"> Beef </button>
+        <button class="opt-btn" id="chicken"> Chicken </button>
+        <button class="opt-btn" id="vege"> Vegetarian </button>
+    </div>
+    <button id="theme"> Light </button>
+    <button id="theme"> Dark </button>
+    <div class="menu"></div> 
+      <script type="module" src="./js/main.js"></script>
 </body>
 </html>

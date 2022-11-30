@@ -1,4 +1,4 @@
-import "./style.css";
+import { menu } from "./menu";
 
 document.querySelector(".btn").addEventListener("click", function () {
   if (document.body.classList.contains("cool")) {
