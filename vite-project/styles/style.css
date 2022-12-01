@@ -9,12 +9,16 @@ body,
 }
 
 :root {
-    --black: #000;
-    --light-blue: #B3CEE5;
-    --dark-blue: #62aef1;
-    --rose: #F7CAC9;
-    --dark-rose: #f39c9b;
-    --gray: #252c30;
+    --light-header: #f0f0f0;
+    --light-bg: #ffffff;
+    --light-imgbg: #f0f0f4;
+    --dark-header: #000000;
+    --dark-bg: #353535;
+    --dark-imgbg: #202124;
+    --blue-header: #1a73e8;
+    --blue-bg: #cbdcf7;
+    --blue-imgbg: #84adea;
+
 
 /*Intentions */
 --primary: var(--light-blue);
