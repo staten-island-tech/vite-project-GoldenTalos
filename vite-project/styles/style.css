@@ -12,65 +12,38 @@ body,
     --light-header: #f0f0f0;
     --light-bg: #ffffff;
     --light-imgbg: #f0f0f4;
+
     --dark-header: #000000;
     --dark-bg: #353535;
     --dark-imgbg: #202124;
-    --blue-header: #1a73e8;
-    --blue-bg: #cbdcf7;
-    --blue-imgbg: #84adea;
 
-
-/*Intentions */
---primary: var(--light-blue);
---secondary: var(--dark-blue);
-
+    --bleu-header: #1a73e8;
+    --bleu-bg: #cbdcf7;
+    --bleu-imgbg: #84adea;
 }
 
-.warm {
-    --primary: var(--rose);
-    --secondary: var(--dark-rose);
+.light {
+    --header: var(--light-header);
+    --bg: var(--light-bg);
+    --imgbg: var(var(--light-imgbg));
 }
 
-.cool {
-    --primary: var(var(--light-blue));
-    --secondary: var(var(--dark-blue));
+.dark {
+    --header: var(--dark-header);
+    --bg: var(--dark-bg);
+    --imgbg: var(var(--dark-imgbg));
 }
-.header {
-    background-color: var(--primary);
-}
-
-.main {
-    background-color: var(--secondary);
-    height: 90vh;
+.bleu {
+    --header: var(--bleu-header);
+    --bg: var(--bleu-bg);
+    --imgbg: var(var(--bleu-imgbg));
 }
 
-h1 {
-    font-size: var(--h1);
+body {
+    background-color: var(--background);
 }
 
-h2 {
-    font-size: var(--h2)
-}
 
-h3 {
-    font-size: var(--h3)
-}
-
-h4 {
-    font-size: var(--h4)
-}
-
-h5 {
-    font-size: var(--h5)
-}
-
-h1, 
-h2,
-h3,
-h4,
-h5 {
-    text-align: center;
-}
 .btn, 
 .btn:link, 
 .btn:visited {
