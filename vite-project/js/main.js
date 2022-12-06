@@ -1,4 +1,6 @@
 import { menu } from "./menu";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 document.querySelector(".btn").addEventListener("click", function () {
   if (document.body.classList.contains("cool")) {
