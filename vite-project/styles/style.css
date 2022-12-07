@@ -1,4 +1,5 @@
 @import url(type.css);
+@import url(button.css);
 
 html, 
 body, 
@@ -20,6 +21,10 @@ body,
     --bleu-header: #1a73e8;
     --bleu-bg: #cbdcf7;
     --bleu-imgbg: #84adea;
+
+    --black: #000000;
+    --white: #ffffff;
+    --navy: #1f597a;
 }
 
 .light {
@@ -39,28 +44,27 @@ body,
     --imgbg: var(var(--bleu-imgbg));
 }
 
+.black {
+    --color: var(--black);
+}
+
+.white {
+    --color: var(--white);
+}
+
+.navy {
+    --color: var(var(--navy));
+}
+
 body {
-    background-color: var(--background);
+    background-color: var(--bg);
 }
 
-.opt-button {
-    width: 10%;
-    height: 50px;
-    font-size: 2rem;
+
+h1 {
+    color: #f8ba31;
 }
 
-.theme {
-    padding: 1px 3px;
-    font-size: 2rem;
-    border: none;
-    width: 20rem;
-    height: 5rem;
-    border-radius: 10px;
-    text-align: center;
-    margin-left: 50px;
-}
-
-.btn:hover {
-    transform: translateY(-2px);
-    box-shadown: 0 10px 0.5rem rgba(0, 0, 0, 0.2);
+h4 {
+    color: #999ea2;
 }

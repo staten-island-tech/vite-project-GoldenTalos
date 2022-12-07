@@ -17,31 +17,52 @@ document.querySelector("#beef").addEventListener("click", function () {
 });
 document.querySelector("#chicken").addEventListener("click", function () {
   menuDiv.innerHTML = "";
-  const chicken = menu.filter((item) => item.meat == "chicken");
+  const chicken = menu.filter((item) => item.meat.includes("chicken"));
   display(chicken);
 });
-document.querySelector("#vegetarian").addEventListener("click", function () {
+document.querySelector("#pork").addEventListener("click", function () {
   menuDiv.innerHTML = "";
   const pork = menu.filter((item) => item.meat.includes("pork"));
   display(pork);
 });
+document.querySelector("#drink").addEventListener("click", function () {
+  menuDiv.innerHTML = "";
+  const drink = menu.filter((item) => item.drink == "y");
+  display(drink);
+});
 
 document.querySelector("#light").addEventListener("click", function () {
   if (document.body.classList.contains("dark")) {
-    document.body.classList = ["light"];
+    document.body.classList.add("light");
+    document.body.classList.remove("dark");
   } else if (document.body.classList.contains("bleu")) {
-    document.body.classList = ["light"];
+    document.body.classList.add("light");
+    document.body.classList.remove("bleu");
   } else {
     document.body.classList = ["light"];
   }
 });
 
-document.querySelector(".btn").addEventListener("click", function () {
-  if (document.body.classList.contains("cool")) {
-    document.body.classList.add("warm");
-    document.body.classList.remove("cool");
+document.querySelector("#dark").addEventListener("click", function () {
+  if (document.body.classList.contains("light")) {
+    document.body.classList.add("dark");
+    document.body.classList.remove("light");
+  } else if (document.body.classList.contains("bleu")) {
+    document.body.classList.add("dark");
+    document.body.classList.remove("bleu");
   } else {
-    document.body.classList.add("cool");
-    document.body.classList.remove("warm");
+    document.body.classList = ["dark"];
+  }
+});
+
+document.querySelector("#bleu").addEventListener("click", function () {
+  if (document.body.classList.contains("light")) {
+    document.body.classList.add("bleu");
+    document.body.classList.remove("light");
+  } else if (document.body.classList.contains("dark")) {
+    document.body.classList.add("bleu");
+    document.body.classList.remove("dark");
+  } else {
+    document.body.classList = ["bleu"];
   }
 });

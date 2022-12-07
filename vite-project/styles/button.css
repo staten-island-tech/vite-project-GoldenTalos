@@ -1,0 +1,21 @@
+.opt-button {
+    width: 10%;
+    height: 50px;
+    font-size: 2rem;
+}
+
+.theme {
+    padding: 1px 3px;
+    font-size: 20px;
+    border: none;
+    width: 12rem;
+    height: 3rem;
+    border-radius: 15px;
+    text-align: center
+}
+
+#light {
+    position: fixed;
+    top: 10;
+    right:10;
+}
