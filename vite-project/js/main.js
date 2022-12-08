@@ -1,12 +1,14 @@
 import { menu } from "./menu";
+import "./styles/style.css";
+import { DOMSelectors } from "./dom";
 import AOS from "aos";
 import "aos/dist/aos.css";
 AOS.init();
 
-const menuDiv = document.querySelector("#all");
+const menu = document.querySelector("#menu");
 display(menu);
 
-document.querySelector("#all").addEventListener("click", function () {
+document.querySelector("#fullmenu").addEventListener("click", function () {
   menuDiv.innerHTML = "";
   display(menu);
 });
@@ -66,3 +68,18 @@ document.querySelector("#bleu").addEventListener("click", function () {
     document.body.classList = ["bleu"];
   }
 });
+
+function menuitems() {
+  menu.forEach((item) => {
+    DOMSelectors.box.insertAdjacentHTML(
+      "beforeend",
+      `<div class="menu-items">
+              <h2>${item.name}</h2>
+              <img class="image" src="${item.image}">
+              <p class="price">$${item.price}</p>
+              <p class="description">${item.description}</p>
+          </div>`
+    );
+  });
+}
+menuitems();
