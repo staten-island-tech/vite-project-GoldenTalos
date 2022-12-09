@@ -1,7 +1,12 @@
-.opt-button {
-    width: 10%;
+.opt-btn {
+    margin-top: 35px;
     height: 50px;
     font-size: 2rem;
+    padding: 1px 3px;
+    width: 12rem;
+    height: 3rem;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 .theme {
@@ -18,4 +23,16 @@
     position: fixed;
     top: 10;
     right:10;
+}
+
+#dark {
+    position: fixed;
+    top: 70;
+    right: 10;
+}
+
+#bleu {
+    position: fixed;
+    top: 130;
+    right: 10;
 }

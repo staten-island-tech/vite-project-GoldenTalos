@@ -1,7 +1,8 @@
 const DOMSelectors = {
-  menu: document.querySelector("#fullmenu"),
-  pork: document.querySelector("#pork"),
-  chicken: document.querySelector("#chicken"),
-  beef: document.querySelector("#beef"),
-  drink: document.querySelector("#drinks"),
+  menu: document.getElementById("#fullmenu"),
+  pork: document.getElementById("#pork"),
+  chicken: document.getElementById("#chicken"),
+  beef: document.getElementById("#beef"),
+  drink: document.getElementById("#drinks"),
+  menuitem: document.getElementById("#menuitem"),
 };
