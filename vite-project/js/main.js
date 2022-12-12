@@ -19,13 +19,11 @@ document.getElementById("#chicken").addEventListener("click", function () {
   const chicken = menu.filter((item) => item.meat.includes("chicken"));
   display(chicken);
 });
-document
-  .quergetElementByIdySelector("#pork")
-  .addEventListener("click", function () {
-    menuDiv.innerHTML = "";
-    const pork = menu.filter((item) => item.meat.includes("pork"));
-    display(pork);
-  });
+document.getElementById("#pork").addEventListener("click", function () {
+  menuDiv.innerHTML = "";
+  const pork = menu.filter((item) => item.meat.includes("pork"));
+  display(pork);
+});
 document.getElementById("#drink").addEventListener("click", function () {
   menuDiv.innerHTML = "";
   const drink = menu.filter((item) => item.drink == "y");
