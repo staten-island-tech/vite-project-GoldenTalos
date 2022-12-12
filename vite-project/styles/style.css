@@ -44,22 +44,13 @@ body,
     --imgbg: var(var(--bleu-imgbg));
 }
 
-.black {
-    --color: var(--black);
+.main {
+    background-color: var(--header);
 }
 
-.white {
-    --color: var(--white);
-}
-
-.navy {
-    --color: var(var(--navy));
-}
-
-body {
+.header {
     background-color: var(--bg);
 }
-
 
 h1 {
     color: #f8ba31;

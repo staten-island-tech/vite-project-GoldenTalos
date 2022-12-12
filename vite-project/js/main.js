@@ -32,39 +32,33 @@ document.getElementById("#drink").addEventListener("click", function () {
   display(drink);
 });
 
-document.getElementById("#light").addEventListener("click", function () {
+document.querySelector(".light").addEventListener("click", function () {
   if (document.body.classList.contains("dark")) {
     document.body.classList.add("light");
     document.body.classList.remove("dark");
   } else if (document.body.classList.contains("bleu")) {
     document.body.classList.add("light");
     document.body.classList.remove("bleu");
-  } else {
-    document.body.classList = ["light"];
   }
 });
 
-document.getElementById("#dark").addEventListener("click", function () {
+document.querySelector(".dark").addEventListener("click", function () {
   if (document.body.classList.contains("light")) {
     document.body.classList.add("dark");
     document.body.classList.remove("light");
   } else if (document.body.classList.contains("bleu")) {
     document.body.classList.add("dark");
     document.body.classList.remove("bleu");
-  } else {
-    document.body.classList = ["dark"];
   }
 });
 
-document.getElementById("#bleu").addEventListener("click", function () {
+document.querySelector(".bleu").addEventListener("click", function () {
   if (document.body.classList.contains("light")) {
     document.body.classList.add("bleu");
     document.body.classList.remove("light");
   } else if (document.body.classList.contains("dark")) {
     document.body.classList.add("bleu");
     document.body.classList.remove("dark");
-  } else {
-    document.body.classList = ["bleu"];
   }
 });
 
@@ -72,7 +66,7 @@ function menustuff() {
   menu.forEach((item) => {
     DOMSelectors.menuitem.insertAdjacentHTML(
       "beforeend",
-      `<div class="menudiv">
+      `<div class="menu">
               <h2>${item.name}</h2>
               <img class="menu-image" src="${item.image}">
               <p class="menu-price">$${item.price}</p>
