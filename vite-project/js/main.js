@@ -5,6 +5,9 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 AOS.init();
 
+const menuDiv = document.querySelector("#menuitems");
+display(menu);
+
 document.getElementById("#fullmenu").addEventListener("click", function () {
   menuDiv.innerHTML = "";
   display(menu);
@@ -62,9 +65,9 @@ document.querySelector(".bleu").addEventListener("click", function () {
 
 function menustuff() {
   menu.forEach((item) => {
-    DOMSelectors.menuitem.insertAdjacentHTML(
-      "beforeend",
-      `<div class="menu">
+    DOMSelectors.box.insertAdjacentHTML(
+      "afterbegin",
+      `<div class="menu-card">
               <h2>${item.name}</h2>
               <img class="menu-image" src="${item.image}">
               <p class="menu-price">$${item.price}</p>

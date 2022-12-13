@@ -59,3 +59,22 @@ h1 {
 h4 {
     color: #999ea2;
 }
+
+.menu-card {
+    width: 26%;
+    text-align: center;
+    background-color: var(--imgbg);
+    border: 3px solid black;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.menu-description {
+    font-size: 2rem;
+    margin: 10px;
+}
+
+.menu-price {
+    font-size: 2rem;
+    font-weight: 600;
+}
