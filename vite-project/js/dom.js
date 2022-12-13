@@ -4,8 +4,7 @@ const DOMSelectors = {
   chicken: document.getElementById("chicken"),
   beef: document.getElementById("beef"),
   drink: document.getElementById("drinks"),
-  menuitem: document.getElementById("menuitem"),
-  box: document.querySelector("menu-item"),
+  menuitem: document.getElementById("menu-item"),
 };
 
 export { DOMSelectors };

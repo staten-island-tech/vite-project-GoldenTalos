@@ -65,7 +65,7 @@ document.querySelector(".bleu").addEventListener("click", function () {
 
 function menustuff() {
   menu.forEach((item) => {
-    DOMSelectors.box.insertAdjacentHTML(
+    DOMSelectors.menuitem.insertAdjacentHTML(
       "afterbegin",
       `<div class="menu-card">
               <h2>${item.name}</h2>
