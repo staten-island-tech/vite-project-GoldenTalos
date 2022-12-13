@@ -9,29 +9,29 @@
 }
 
 .theme {
-    padding: 1px 3px;
+    padding: 1px 2px;
     font-size: 20px;
     border: none;
-    width: 12rem;
-    height: 3rem;
+    width: 11rem;
+    height: 2.5rem;
     border-radius: 15px;
     text-align: center
 }
 
 #light {
-    position: fixed;
+    position: absolute;
     top: 10;
     right:10;
 }
 
 #dark {
-    position: fixed;
-    top: 70;
+    position: absolute;
+    top: 55;
     right: 10;
 }
 
 #bleu {
-    position: fixed;
-    top: 130;
+    position: absolute;
+    top: 100;
     right: 10;
 }

@@ -2,7 +2,9 @@
 @import url(button.css);
 
 html, 
-body, 
+body{
+    background-color: var(--bg);
+} 
 * {
     margin: 0;
     padding: 0;
@@ -18,7 +20,7 @@ body,
     --dark-bg: #353535;
     --dark-imgbg: #202124;
 
-    --bleu-header: #1a73e8;
+    --bleu-header: #619dec;
     --bleu-bg: #cbdcf7;
     --bleu-imgbg: #84adea;
 

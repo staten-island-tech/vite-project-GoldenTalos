@@ -5,32 +5,43 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 AOS.init();
 
-document.getElementById("#fullmenu").addEventListener("click", function () {
+const DOMSelectorsTwo = {
+  fullmenu: document.getElementById("fullmenu"),
+  beef: document.getElementById("beef"),
+  chicken: document.getElementById("chicken"),
+  pork: document.getElementById("pork"),
+  drink: document.getElementById("drinks"),
+  light: document.getElementById("light"),
+  dark: document.getElementById("dark"),
+  bleu: document.getElementById("bleu"),
+};
+
+DOMSelectorsTwo.fullmenu.addEventListener("click", function () {
   menuDiv.innerHTML = "";
   display(menu);
 });
-document.getElementById("#beef").addEventListener("click", function () {
+DOMSelectorsTwo.beef.addEventListener("click", function () {
   menuDiv.innerHTML = "";
   const beef = menu.filter((item) => item.meat.includes("beef"));
   display(beef);
 });
-document.getElementById("#chicken").addEventListener("click", function () {
+DOMSelectorsTwo.chicken.addEventListener("click", function () {
   menuDiv.innerHTML = "";
   const chicken = menu.filter((item) => item.meat.includes("chicken"));
   display(chicken);
 });
-document.getElementById("#pork").addEventListener("click", function () {
+DOMSelectorsTwo.pork.addEventListener("click", function () {
   menuDiv.innerHTML = "";
   const pork = menu.filter((item) => item.meat.includes("pork"));
   display(pork);
 });
-document.getElementById("#drink").addEventListener("click", function () {
+DOMSelectorsTwo.drink.addEventListener("click", function () {
   menuDiv.innerHTML = "";
   const drink = menu.filter((item) => item.drink == "y");
   display(drink);
 });
 
-document.querySelector(".light").addEventListener("click", function () {
+DOMSelectorsTwo.light.addEventListener("click", function () {
   if (document.body.classList.contains("dark")) {
     document.body.classList.add("light");
     document.body.classList.remove("dark");
@@ -40,7 +51,7 @@ document.querySelector(".light").addEventListener("click", function () {
   }
 });
 
-document.querySelector(".dark").addEventListener("click", function () {
+DOMSelectorsTwo.dark.addEventListener("click", function () {
   if (document.body.classList.contains("light")) {
     document.body.classList.add("dark");
     document.body.classList.remove("light");
@@ -50,7 +61,7 @@ document.querySelector(".dark").addEventListener("click", function () {
   }
 });
 
-document.querySelector(".bleu").addEventListener("click", function () {
+DOMSelectorsTwo.bleu.addEventListener("click", function () {
   if (document.body.classList.contains("light")) {
     document.body.classList.add("bleu");
     document.body.classList.remove("light");
