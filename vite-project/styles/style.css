@@ -14,7 +14,7 @@ body{
 :root {
     --light-header: #f0f0f0;
     --light-bg: #ffffff;
-    --light-imgbg: #f0f0f4;
+    --light-imgbg: #ceced6b2;
 
     --dark-header: #000000;
     --dark-bg: #353535;
@@ -32,7 +32,7 @@ body{
 .light {
     --header: var(--light-header);
     --bg: var(--light-bg);
-    --imgbg: var(var(--light-imgbg));
+    --imgbg: var(--light-imgbg);
 }
 
 .dark {
@@ -63,20 +63,21 @@ h4 {
 }
 
 .menu-card {
-    width: 26%;
+    margin-top: 20px;
     text-align: center;
     background-color: var(--imgbg);
     border: 3px solid black;
     border-radius: 10px;
     margin-bottom: 20px;
+    display: flex;
+    width: 25%;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    flex-direction: row;
 }
 
-.menu-description {
-    font-size: 2rem;
-    margin: 10px;
-}
 
-.menu-price {
-    font-size: 2rem;
-    font-weight: 600;
+
+.menu-image {
+    width: 100%;
 }

@@ -21,7 +21,7 @@ const menu = [
   {
     name: "Chicken Nuggets",
     price: 5,
-    description: "Deep-fried, rispy nuggets",
+    description: "Deep-fried, crispy nuggets",
     image:
       "https://www.silive.com/resizer/3-ebQntRdlYk7VTVps2urLPv98Y=/arc-anglerfish-arc2-prod-advancelocal/public/BE4C5FLPY5BGTHQ2ONMR2CJNHM.jpg",
     meat: "chicken",
