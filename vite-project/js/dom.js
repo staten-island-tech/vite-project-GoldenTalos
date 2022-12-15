@@ -17,5 +17,6 @@ const DOMSelectorsTwo = {
   light: document.getElementById("light"),
   dark: document.getElementById("dark"),
   bleu: document.getElementById("bleu"),
+  text: document.querySelector("text"),
 };
 export { DOMSelectorsTwo };
