@@ -62,35 +62,52 @@ h4 {
     color: #999ea2;
 }
 
+.menu-item {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 98.5vw;
+    justify-content: space-around;
+    align-content: space-around;
+    font-family: 'Caveat', cursive;
+}
+
 .menu-card {
-    margin-top: 20px;
+    margin-top: 40px;
     text-align: center;
     background-color: var(--imgbg);
     border: 3px solid black;
     border-radius: 10px;
     margin-bottom: 20px;
-    display: flex;
-    width: 25%;
-    justify-content: center;
-    flex-wrap: wrap;
-    flex-direction: row;
+    margin-left: 40px;
+    margin-right: 40px;
+    width: 27%;
+}
+
+.name {
+    margin-top: 10px;
+    margin-bottom: 20px;
 }
 
 .menu-image {
+    margin-top: 50px;
     margin-left: 50%;
     margin-right: 50%;
     text-align: center;
-    width: 100%;
+    width:415px;
+    height:315px;
     margin: 0 auto;
 }
 
 .menu-price {
-    font-size: 40px;
+    margin-top: 10px;
+    font-size: 50px;
 
 }
 
 .menu-description {
-    font-size: 20px;
+    font-size: 30px;
     margin-bottom: 10px;
 }
 

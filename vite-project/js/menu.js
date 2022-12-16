@@ -14,7 +14,7 @@ const menu = [
     price: 4,
     description: "Long, thin pieces of potato fried in oil; thin and crispy",
     image:
-      "https://www.mcdonalds.com/content/dam/usa/nfl/nutrition/items/regular/desktop/t-mcdonalds-Fries-Small-Medium.jpg",
+      "https://s7d1.scene7.com/is/image/mcdonalds/mcdonalds-fries-medium:1-3-product-tile-desktop?wid=829&hei=515&dpr=off",
     meat: "none",
     drink: "n",
   },
@@ -23,16 +23,16 @@ const menu = [
     price: 5,
     description: "Deep-fried, crispy nuggets",
     image:
-      "https://www.silive.com/resizer/3-ebQntRdlYk7VTVps2urLPv98Y=/arc-anglerfish-arc2-prod-advancelocal/public/BE4C5FLPY5BGTHQ2ONMR2CJNHM.jpg",
+      "https://www.foodandwine.com/thmb/vTsDJfcGKypX_Xu6KQENyWJGR2g=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/British-Woman-Breaks-Chicken-McNugget-Record-FT-BLOG0322-44f5477b01834bc983305c2aaca84946.jpg",
     meat: "chicken",
     drink: "n",
   },
   {
     name: "Apple Slices",
-    price: 2,
-    description: "Juicy, red, crunchy slices",
+    price: 1.5,
+    description: "Juicy, red, crunchy slices of apple",
     image:
-      "https://www.evolvingtable.com/wp-content/uploads/2020/08/How-to-Cut-Apple-14.jpg",
+      "https://assets.epicurious.com/photos/54be81b7e231becc7f3d6e35/master/pass/EP_20141006_masters-2_6x4.jpg",
     meat: "none",
     drink: "n",
   },
@@ -41,7 +41,8 @@ const menu = [
     price: 7,
     description:
       "Crispy, juicy, high-quality chicken, with fresh lettuce and tomatos on a multi-grain bun",
-    image: "https://fastfoodnutrition.org/item-photos/full/161353478436185.jpg",
+    image:
+      "https://img.buzzfeed.com/buzzfeed-static/static/2015-08/31/10/campaign_images/webdr10/mcdonalds-moves-to-capitalize-on-fried-chicken-sa-2-21699-1441032735-2_dblbig.jpg?resize=1200:*",
     meat: "chicken",
     drink: "n",
   },
