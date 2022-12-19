@@ -3,9 +3,9 @@ const menu = [
     name: "Bacon Burger",
     price: 6,
     description:
-      "High quality beef, medium well, with cheese and bacon on a multigrain bun",
+      "High quality beef, medium well, with cheese, bacon, and onion on a multigrain bun",
     image:
-      "https://www.mcdonalds.com/content/dam/usa/nfl/nutrition/items/regular/desktop/t-mcdonalds-qpc-bacon.jpg",
+      "https://houston.culturemap.com/media-library/drive-thru-gourmet-mcdonald-s-bacon-burger.jpg?id=31523615&width=2000&height=1500&quality=85&coordinates=0%2C2%2C0%2C2",
     meat: "beef, pork",
     drink: "n",
   },
@@ -42,18 +42,37 @@ const menu = [
     description:
       "Crispy, juicy, high-quality chicken, with fresh lettuce and tomatos on a multi-grain bun",
     image:
-      "https://img.buzzfeed.com/buzzfeed-static/static/2015-08/31/10/campaign_images/webdr10/mcdonalds-moves-to-capitalize-on-fried-chicken-sa-2-21699-1441032735-2_dblbig.jpg?resize=1200:*",
+      "https://s7d1.scene7.com/is/image/mcdonalds/t-mcdonalds-deluxe-crispy-chicken-sandwich:product-header-desktop",
     meat: "chicken",
     drink: "n",
   },
   {
-    name: "Pork Rib Sandwich",
-    price: 6,
+    name: "Beef Wellington",
+    price: 12,
     description:
-      "Medium-rare pork patty, with fresh lettuce, tomatoes, and pickles on a brioche-styled bun",
+      "Fillet steak coated with pâté and duxelles, wrapped in baked puff pastry",
     image:
-      "https://betterbegrilled.com/wp-content/uploads/2019/06/20190627_161401.jpg",
+      "https://static01.nyt.com/images/2019/12/13/dining/mc-beef-wellington/mc-beef-wellington-articleLarge-v2.jpg",
+    meat: "beef",
+    drink: "n",
+  },
+  {
+    name: "Pork Chop",
+    price: 8,
+    description:
+      "Fillet steak coated with pâté and duxelles, wrapped in baked puff pastry",
+    image:
+      "https://www.lemonblossoms.com/wp-content/uploads/2018/10/Easy-Oven-Baked-Pork-Chops-S1.jpg",
     meat: "pork",
+    drink: "n",
+  },
+  {
+    name: "Chicken Alfredo",
+    price: 10,
+    description: "Rich and creamy chicken pasta with hearty Alfredo sauce",
+    image:
+      "https://food.fnr.sndimg.com/content/dam/images/food/fullset/2018/10/4/1/FN_chain-restaurant-entrees_Olive-Garden_Chicken-Alfredo_s6x4.jpg.rend.hgtvcom.616.411.suffix/1538685766492.jpeg",
+    meat: "chicken",
     drink: "n",
   },
   {
