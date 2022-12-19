@@ -1,20 +1,10 @@
 import { menu } from "./menu";
 import "../styles/style.css";
 import { DOMSelectors } from "./dom";
+import { DOMSelectorsTwo } from "./dom";
 import AOS from "aos";
 import "aos/dist/aos.css";
 AOS.init();
-
-const DOMSelectorsTwo = {
-  fullmenu: document.getElementById("fullmenu"),
-  beef: document.getElementById("beef"),
-  chicken: document.getElementById("chicken"),
-  pork: document.getElementById("pork"),
-  drink: document.getElementById("drinks"),
-  light: document.getElementById("light"),
-  dark: document.getElementById("dark"),
-  bleu: document.getElementById("bleu"),
-};
 
 DOMSelectorsTwo.fullmenu.addEventListener("click", function () {
   menuDiv.innerHTML = "";
@@ -75,7 +65,7 @@ function menustuff() {
   menu.forEach((item) => {
     DOMSelectors.menuitem.insertAdjacentHTML(
       "afterbegin",
-      `<div class="menu-ca rd">
+      `<div class="menu-card">
               <h2>${item.name}</h2>
               <img class="menu-image" src="${item.image}">
               <p class="menu-price">$${item.price}</p>
