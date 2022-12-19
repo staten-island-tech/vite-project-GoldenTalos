@@ -75,7 +75,7 @@ function menustuff() {
   menu.forEach((item) => {
     DOMSelectors.menuitem.insertAdjacentHTML(
       "afterbegin",
-      `<div class="menu-card">
+      `<div class="menu-ca rd">
               <h2>${item.name}</h2>
               <img class="menu-image" src="${item.image}">
               <p class="menu-price">$${item.price}</p>
