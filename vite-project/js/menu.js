@@ -59,8 +59,7 @@ const menu = [
   {
     name: "Pork Chop",
     price: 8,
-    description:
-      "Fillet steak coated with pâté and duxelles, wrapped in baked puff pastry",
+    description: "",
     image:
       "https://www.lemonblossoms.com/wp-content/uploads/2018/10/Easy-Oven-Baked-Pork-Chops-S1.jpg",
     meat: "pork",
