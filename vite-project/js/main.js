@@ -6,31 +6,6 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 AOS.init();
 
-DOMSelectorsTwo.fullmenu.addEventListener("click", function () {
-  menuDiv.innerHTML = "";
-  display(menu);
-});
-DOMSelectorsTwo.beef.addEventListener("click", function () {
-  menuDiv.innerHTML = "";
-  const beef = menu.filter((item) => item.meat.includes("beef"));
-  display(beef);
-});
-DOMSelectorsTwo.chicken.addEventListener("click", function () {
-  menuDiv.innerHTML = "";
-  const chicken = menu.filter((item) => item.meat.includes("chicken"));
-  display(chicken);
-});
-DOMSelectorsTwo.pork.addEventListener("click", function () {
-  menuDiv.innerHTML = "";
-  const pork = menu.filter((item) => item.meat.includes("pork"));
-  display(pork);
-});
-DOMSelectorsTwo.drink.addEventListener("click", function () {
-  menuDiv.innerHTML = "";
-  const drink = menu.filter((item) => item.drink == "y");
-  display(drink);
-});
-
 DOMSelectorsTwo.light.addEventListener("click", function () {
   if (document.body.classList.contains("dark")) {
     document.body.classList.add("light");
@@ -75,3 +50,117 @@ function menustuff() {
   });
 }
 menustuff();
+
+function drink() {
+  menu
+    .filter((drink) => drink.drink.includes("y"))
+    .forEach((drink) => {
+      DOMSelectors.menuitem.insertAdjacentHTML(
+        "beforeend",
+        `<div class="menu-card">
+                <h2 class="name">${drink.name}</h2>
+                <img class="menu-image" src="${drink.image}">
+                <p class="menu-price">$${drink.price}</p>
+                <p class="menu-description">${drink.description}</p>
+            </div>`
+      );
+    });
+}
+
+function beef() {
+  menu
+    .filter((beef) => beef.meat.includes("beef"))
+    .forEach((beef) => {
+      DOMSelectors.menuitem.insertAdjacentHTML(
+        "beforeend",
+        `<div class="menu-card">
+                <h2 class="name">${beef.name}</h2>
+                <img class="menu-image" src="${beef.image}">
+                <p class="menu-price">$${beef.price}</p>
+                <p class="menu-description">${beef.description}</p>
+            </div>`
+      );
+    });
+}
+
+function chicken() {
+  menu
+    .filter((chicken) => chicken.meat.includes("chicken"))
+    .forEach((chicken) => {
+      DOMSelectors.menuitem.insertAdjacentHTML(
+        "beforeend",
+        `<div class="menu-card">
+                <h2 class="name">${chicken.name}</h2>
+                <img class="menu-image" src="${chicken.image}">
+                <p class="menu-price">$${chicken.price}</p>
+                <p class="menu-description">${chicken.description}</p>
+            </div>`
+      );
+    });
+}
+
+function pork() {
+  menu
+    .filter((pork) => pork.meat.includes("pork"))
+    .forEach((pork) => {
+      DOMSelectors.menuitem.insertAdjacentHTML(
+        "beforeend",
+        `<div class="menu-card">
+                <h2 class="name">${pork.name}</h2>
+                <img class="menu-image" src="${pork.image}">
+                <p class="menu-price">$${pork.price}</p>
+                <p class="menu-description">${pork.description}</p>
+            </div>`
+      );
+    });
+}
+
+function veg() {
+  menu
+    .filter((veg) => veg.vegetarian.includes("y"))
+    .forEach((veg) => {
+      DOMSelectors.menuitem.insertAdjacentHTML(
+        "beforeend",
+        `<div class="menu-card">
+                <h2 class="name">${veg.name}</h2>
+                <img class="menu-image" src="${veg.image}">
+                <p class="menu-price">$${veg.price}</p>
+                <p class="menu-description">${veg.description}</p>
+            </div>`
+      );
+    });
+}
+
+function clear() {
+  DOMSelectors.menuitem.innerHTML = "";
+}
+
+document.getElementById("fullmenu").addEventListener("click", function () {
+  clear();
+  menustuff();
+});
+
+document.getElementById("drinks").addEventListener("click", function () {
+  clear();
+  drink();
+});
+
+document.getElementById("pork").addEventListener("click", function () {
+  clear();
+  pork();
+});
+
+document.getElementById("chicken").addEventListener("click", function () {
+  clear();
+  chicken();
+});
+
+document.getElementById("beef").addEventListener("click", function () {
+  clear();
+  beef();
+});
+
+document.getElementById("veg").addEventListener("click", function () {
+  clear();
+  veg();
+});
