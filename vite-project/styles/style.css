@@ -40,6 +40,7 @@ body{
     --bg: var(--dark-bg);
     --imgbg: var(var(--dark-imgbg));
 }
+
 .bleu {
     --header: var(--bleu-header);
     --bg: var(--bleu-bg);
