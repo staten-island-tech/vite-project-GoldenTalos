@@ -120,8 +120,19 @@ const menu = [
     description:
       "Beef short ribs simmered with red wine sauce and mashed potatoes",
     image:
-      "https://playswellwithbutter.com/wp-content/uploads/2020/12/Red-Wine-Braised-Short-Ribs-13.jpg",
+      "https://cravinghomecooked.com/wp-content/uploads/2020/11/braised-short-ribs-1-2.jpg",
     meat: "beef",
+    drink: "n",
+    vegetarian: "n",
+  },
+  {
+    name: "Mac and Cheese",
+    price: 5,
+    description:
+      "Macaroni topped with cheese sauce made from cheddar, and baked",
+    image:
+      "https://makeyourmeals.com/wp-content/uploads/2021/11/featured-baked-mac-and-cheese.jpg",
+    meat: "none",
     drink: "n",
     vegetarian: "y",
   },
@@ -141,8 +152,8 @@ const menu = [
     description:
       "Oxtail simmered in red wine and beef stock, with carrots and rosemary",
     image:
-      "https://food.fnr.sndimg.com/content/dam/images/food/fullset/2018/10/4/1/FN_chain-restaurant-entrees_Olive-Garden_Chicken-Alfredo_s6x4.jpg.rend.hgtvcom.616.411.suffix/1538685766492.jpeg",
-    meat: "chicken",
+      "https://simply-delicious-food.com/wp-content/uploads/2019/10/Slow-braised-oxtail-.jpg",
+    meat: "beef",
     drink: "n",
     vegetarian: "n",
   },

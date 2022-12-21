@@ -39,7 +39,7 @@ DOMSelectorsTwo.bleu.addEventListener("click", function () {
 function menustuff() {
   menu.forEach((item) => {
     DOMSelectors.menuitem.insertAdjacentHTML(
-      "afterbegin",
+      "beforeend",
       `<div class="menu-card">
               <h2>${item.name}</h2>
               <img class="menu-image" src="${item.image}">
