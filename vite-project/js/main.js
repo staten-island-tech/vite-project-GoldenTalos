@@ -49,7 +49,6 @@ function menustuff() {
     );
   });
 }
-
 menustuff();
 
 function drink() {
